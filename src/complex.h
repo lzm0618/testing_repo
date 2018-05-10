@@ -12,7 +12,17 @@ namespace ClassPrac {
 
 class complex {
 public:
+	complex() :
+			re_(0), im_(0) {
+	}
+	complex(double r) :
+			re_(r), im_(0) {
+	}
 	complex(double r, double i);
+	//can use default definition, should use references
+	complex(const complex& c) :
+			re_(c.re_), im_(c.im_) {
+	}
 	virtual ~complex();
 	//can not define member function operator +, which will conflict with global function operator +
 	//just define operator +=

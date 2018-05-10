@@ -57,6 +57,7 @@ int main() {
 	complex r1 = c1 + c3;
 	complex r2 = c1 + 2.0;
 	complex r3 = 2 + c2;
+	complex b = 3;
 	cout << "\a!!!Hello World!!!" << endl; // prints !!!Hello World!!!
 	return 0;
 }
