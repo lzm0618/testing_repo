@@ -30,5 +30,11 @@ complex complex::operator *(complex a) {
 	double im = re * a.im_ + im_ * a.re_;
 	return complex(re, im);
 }
+complex complex::operator +=(complex a) {
+	re_ += a.re_;
+	im_ += a.im_;
+	return *this;
+}
 
 } /* namespace ClassPrac */
+

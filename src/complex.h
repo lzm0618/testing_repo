@@ -15,6 +15,7 @@ public:
 	complex(double r, double i);
 	virtual ~complex();
 	complex operator+(complex a);
+	complex operator+=(complex a);
 	complex operator*(complex a);
 private:
 	double re_;

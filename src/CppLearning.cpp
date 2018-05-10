@@ -41,10 +41,19 @@ void TestPointers()
 
 }
 
+void test_complex_add(complex x, complex y, complex z)
+{
+	complex r1 = x + y + z;
+	complex r2 = x;
+	r2 += y;
+	r2 += z;
+}
 
 int main() {
-
-	complex r1(1, 2);
+	complex c1(1,2);
+	complex c2(2,3);
+	complex c3(3,3);
+	test_complex_add(c1,c2,c3);
 	cout << "\a!!!Hello World!!!" << endl; // prints !!!Hello World!!!
 	return 0;
 }
